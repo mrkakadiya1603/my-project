@@ -1,33 +1,47 @@
-import React from "react";
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import bdresume from "../../../files/BethD_resume.pdf";
+import React from 'react';
 
-const Contact = () => {
-    return (
-        <div id="contact" style={{backgroundColor: "#f5f5f5", width: "100%", display: "flex", flexDirection: "column", marginTop: "90px"}}>
-            <div className="headerContainer">
-                <div className="header" style={{marginTop: "-30px", marginBottom: "30px"}}>
-                    <p className="headerTitle" >Contact</p>
-                </div>
-                {/* <div className="divider" style={{zIndex: "100"}}></div> */}
-            </div>
-            <div className="connectInfo" style={{alignSelf: "center"}}>
-                <div className="email">
-                    <strong>email:</strong><a href="mailto:bethding0923@gmail.com" className="myemail">bethding0923@gmail.com</a>
-                </div>
-                <div className="media">
-                    <a href="https://www.linkedin.com/in/beth-ding/"><LinkedInIcon className="mediaIcon linkedIn" /></a>
-                    <a href="https://github.com/WenrrrBeth"><GitHubIcon className="mediaIcon github" /></a>
-                    <a className="text resume" href={bdresume}>View Resume</a>
-                </div>
-            </div>
-            <footer>
-                <p style={{fontWeight: 600, fontFamily: "'Quattrocento', serif", marginBottom: "-3px", width: "100%"}}>© 2021 Beth Wen Ding</p>
-                <a href="https://www.icons8.com" style={{fontFamily: "'Arya', sans-serif", color: "black", fontWeight: "200", fontSize: "13px"}}>(Some icons on this page can be found at icons8.com)</a>
-            </footer>
-        </div>
-    )
-}
+import './contact.css';
+
+const Contact = () => (
+  <div id='contact' className="gpt3__footer section__padding">
+    <div className="gpt3__footer-heading">
+      <h1 className="gradient__text">Do you want to step in to the future before others</h1>
+    </div>
+
+    <div className="gpt3__footer-btn">
+      <p>Request Early Access</p>
+    </div>
+
+    <div className="gpt3__footer-links">
+      <div className="gpt3__footer-links_logo">
+        
+        <p>Crechterwoord K12 182 DK Alknjkcb, <br /> All Rights Reserved</p>
+      </div>
+      <div className="gpt3__footer-links_div">
+        <h4>Links</h4>
+        <p>Overons</p>
+        <p>Social Media</p>
+        <p>Counters</p>
+        <p>Contact</p>
+      </div>
+      <div className="gpt3__footer-links_div">
+        <h4>Company</h4>
+        <p>Terms & Conditions </p>
+        <p>Privacy Policy</p>
+        <p>Contact</p>
+      </div>
+      <div className="gpt3__footer-links_div">
+        <h4>Get in touch</h4>
+        <p>Crechterwoord K12 182 DK Alknjkcb</p>
+        <p>085-132567</p>
+        <p>info@payme.net</p>
+      </div>
+    </div>
+
+    <div className="gpt3__footer-copyright">
+      <p>@2021 GPT-3. All rights reserved.</p>
+    </div>
+  </div>
+);
 
 export default Contact;

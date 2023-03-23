@@ -18,6 +18,7 @@ export default function Project() {
   }, []);
 
   return (
+    <div id="projects">
     <main className="w-full flex bg-normal bg-no-repeat bg-cover bg-fixed justify-center min-h-screen text-white relative ">
     
       <section className="w-full my-20">
@@ -38,5 +39,6 @@ export default function Project() {
         </div>
       </section>
     </main>
+    </div>
   );
 }
